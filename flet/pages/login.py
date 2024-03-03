@@ -71,17 +71,30 @@ class Login(Container):
                             self.password_box,
                             Container(height=0),
 
+                            # Container(
+                            #     alignment=alignment.center,
+                            #     bgcolor='#4e73df',
+                            #     height=40,
+                            #     border_radius=30,
+                            #     content=Text(
+                            #         value='Login'
+                            #     ),
+                            #     
+                            #     on_click=self.login
+
                             Container(
-                                alignment=alignment.center,
-                                bgcolor='#4e73df',
-                                height=40,
-                                border_radius=30,
-                                content=Text(
-                                    value='Login'
-                                ),
-                                on_click=self.login
-                                
+                                FilledButton(
+                                    text="Login",
+                                    height=40,
+                                    width = 500,
+                                    icon_color=blue
+                                    
+                                             ),
+                                  
+                                    on_click=self.login,
                             ),
+                                
+                            
                             
                             Container(
                                 content=Text(
